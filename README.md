@@ -28,7 +28,7 @@ Xylo is an online playroom toy rotation creation app! It is your digital toy box
 - As a user, I want to click a link that shows a resource page for toy rotation ideas, user blog, connected activities, sharing options, etc. (Bonus)
 
 ## ERD
-![app erd](https://i.imgur.com/9UrLuph.png)
+![app erd](https://i.imgur.com/Z0JFzsE.png)
 
 ## API
 Postman for testing.
