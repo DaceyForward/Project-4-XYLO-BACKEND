@@ -1,6 +1,5 @@
 'use strict'
 
-
 require('dotenv').config()
 
 // creating a base name for the mongodb
@@ -15,7 +14,7 @@ const mongooseBaseName = 'backend-xylo'
 
 const database = {
 	development: process.env.MONGODB_URI,
-	test: process.env.MONGODB_URI,
+	test: process.env.MONGODB_URI
 }
 
 // Identify if development environment is test or development
