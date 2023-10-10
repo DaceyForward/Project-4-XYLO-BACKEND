@@ -18,17 +18,17 @@ const rotationSchema = new mongoose.Schema(
 			// type: mongoose.Schema.Types.ObjectId,
 			// ref: 'Toy',
 			type: String,
-			enum: "",
+			// enum: "",
 			// required: true,
 			//default: 
 		},
 		start: {
 			type: Date,
-			required: true,
+			// required: true,
 		},
 		end: {
 			type: Date,
-			required: true,
+			// required: true,
 		},
 		owner: {
 			type: mongoose.Schema.Types.ObjectId,

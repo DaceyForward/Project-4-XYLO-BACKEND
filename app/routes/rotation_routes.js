@@ -61,7 +61,7 @@ router.get('/rotations/mine', requireToken, (req, res, next) => {
 
 // SHOW
 // GET /rotations/
-router.get('/rotations/:id', requireToken, (req, res, next) => {
+router.get('/rotations/:id', (req, res, next) => {
 	// req.params.id will be set based on the `:id` in the route
 	Rotation.findById(req.params.id)
 		.then(handle404)
