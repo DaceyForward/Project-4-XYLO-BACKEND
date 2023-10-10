@@ -29,7 +29,7 @@ const router = express.Router()
 
 // INDEX
 // GET /toys
-router.get('/toys', requireToken, (req, res, next) => {
+router.get('/toys', (req, res, next) => {
 	Toy.find()
 		.then((toys) => {
 			// `toys` will be an array of Mongoose documents
@@ -38,6 +38,22 @@ router.get('/toys', requireToken, (req, res, next) => {
 			return toys.map((toy) => toy.toObject())
 		})
 		// respond with status 200 and JSON of the toys
+		.then((toys) => res.status(200).json({ toys: toys }))
+		// if an error occurs, pass it to the handler
+		.catch(next)
+})
+
+// INDEX - USER SPECIFIC
+// GET /toys/mine
+router.get('/toys/mine', requireToken, (req, res, next) => {
+	Toy.find({ owner: req.user.id })
+		.then((toys) => {
+			// `rotations` will be an array of Mongoose documents
+			// we want to convert each one to a POJO, so we use `.map` to
+			// apply `.toObject` to each one
+			return toys.map((toy) => toy.toObject())
+		})
+		// respond with status 200 and JSON of the rotations
 		.then((toys) => res.status(200).json({ toys: toys }))
 		// if an error occurs, pass it to the handler
 		.catch(next)
