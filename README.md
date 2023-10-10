@@ -29,7 +29,7 @@ Xylo is an online playroom toy rotation creation app! It is your digital toy box
 - As a user, I want to see a calendar that shows the time frames of toy rotations I have set up. (Bonus)
 
 ## ERD
-![app erd](https://i.imgur.com/RfCdnWn.png)
+![app erd](https://i.imgur.com/H4pbt33.png)
 
 ## API
 Postman for testing.
