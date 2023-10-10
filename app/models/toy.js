@@ -1,33 +1,21 @@
 const mongoose = require('mongoose')
 
-const rotationSchema = new mongoose.Schema(
+const toySchema = new mongoose.Schema(
 	{
 		name: {
 			type: String,
 			required: true,
 		},
-		desc: {
+		level: {
 			type: String,
 			required: true,
 		},
-		theme: {
+		focusArea: {
 			type: String,
 			required: true,
 		},
-		toys: {
-			// type: mongoose.Schema.Types.ObjectId,
-			// ref: 'Toy',
+		type: {
 			type: String,
-			enum: "",
-			// required: true,
-			//default: 
-		},
-		start: {
-			type: Date,
-			required: true,
-		},
-		end: {
-			type: Date,
 			required: true,
 		},
 		owner: {
@@ -41,4 +29,4 @@ const rotationSchema = new mongoose.Schema(
 	}
 )
 
-module.exports = mongoose.model('Rotation', rotationSchema)
+module.exports = mongoose.model('Toy', toySchema)
