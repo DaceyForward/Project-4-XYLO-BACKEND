@@ -24,11 +24,11 @@ const rotationSchema = new mongoose.Schema(
 		},
 		start: {
 			type: Date,
-			// required: true,
+			required: false,
 		},
 		end: {
 			type: Date,
-			// required: true,
+			required: false,
 		},
 		owner: {
 			type: mongoose.Schema.Types.ObjectId,
