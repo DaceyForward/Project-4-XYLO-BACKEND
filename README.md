@@ -14,14 +14,13 @@ Xylo is an online playroom toy rotation creation app! It is your digital toy box
 ## User Stories
 - As a user, I want to see a home page with links and a login or sign up button.
 - As a user, I want the ability to log in and log out.
-- As a user, I want to click on a link to see a list of all the toys, with photos.
-- As a user, I want to click on a link to see a list of all my toys, with photos.
+- As a user, I want to click on a link to see a list of all the toys.
 - As a user, I want to click on a link to see a list of all of my created toy rotations.
 - As a user, I want to see the list of my rotations, with a link to a details page with more information.
 - As a user, I want to see a list of all the toys that have been added to a specific rotation.
 - As a user, I want the ability to add or delete my own toys.
-- As a user, I want the ability to add a photo of my toys.
 - As a user, I want to see a link I can click on to access my saved information.
+- As a user, I want the ability to add photos of toys. (Bonus)
 - As a user, I want the ability to sort or filter through all the toys. (Bonus)
 - As a user, I want the ability to search for toys with a search bar. (Bonus)
 - As a user, I want the ability to create time frames for my toy rotations and get a reminder to rotate upon logging in. (Bonus)
@@ -91,15 +90,13 @@ Request - toys#create (requires a token):
 ### Token Auth Strategy
 Send the token as `Bearer Token <token>`
 
-## MVP SHOWCASE
-(Screenshots here)
-
 ### Future Versions
 - Expand to lessons and curriculum
-- 
-
-### Getting Started
-Xylo
+- Drap and Drop toys to rotation
+- Calendar to show duration of toy rotation
+- Photos displayed
+- Resources page
+- Reminders when rotations willl start/end
 
 ### Deployed App
 Xylo: 
