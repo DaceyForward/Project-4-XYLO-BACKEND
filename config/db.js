@@ -3,14 +3,8 @@
 require('dotenv').config()
 
 // creating a base name for the mongodb
-// REPLACE THE STRING WITH YOUR OWN DATABASE NAME
-const mongooseBaseName = 'backend-xylo'
 
-// create the mongodb uri for development and test
-// const database = {
-// 	development: `mongodb://localhost/${mongooseBaseName}-development`
-// 	test: `mongodb://localhost/${mongooseBaseName}-test`,
-// }
+const mongooseBaseName = 'backend-xylo'
 
 const database = {
 	development: process.env.MONGODB_URI,
@@ -22,7 +16,6 @@ const database = {
 const localDb = process.env.TESTENV ? database.test : database.development
 
 // Environment variable MONGODB_URI will be available in
-// heroku production evironment otherwise use test or development db
 const currentDb = process.env.MONGODB_URI || localDb
 
 module.exports = currentDb

@@ -1,7 +1,5 @@
 // seedToys.js will run with the command `npm run seed`
 
-// this will seed the db with toys
-
 const mongoose = require('mongoose')
 const Toy = require('./toy')
 const db = require('../../config/db')
